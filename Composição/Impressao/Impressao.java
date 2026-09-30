@@ -2,13 +2,13 @@ package Impressao;
 
 public class Impressao {
 
-    private static int ultimoId = 0;
+    private static int PrimeiroID = 0;
     private int id;
     private String nomeArquivo;
     private boolean status;
 
     public Impressao( String nomeArquivo) {
-        this.id = ++ultimoId;
+        this.id = ++PrimeiroID;
         this.nomeArquivo = nomeArquivo;
         this.status = false;
     }
